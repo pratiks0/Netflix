@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/pictures/IN-en-20240326-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    height:644px;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1000px, 100vw);
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.64;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 10px;
+    padding:0 25px;
+    text-align: center;
+}
+
+.hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.hero> :nth-child(2) {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.seperation{
+    height: 5px;
+    background-color: rgb(101, 98, 98);
+}
+
+.btn{
+    padding: 3px 7px;
+    font-weight: 400;
+    background-color: rgba(168, 167, 167, 0.117);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-red{
+background-color: red;
+color: white;
+padding: 3px 24px;
+font-size: 20px;
+border-radius: 4px;
+}
+
+.btn-red-sm{
+    color: white;
+    background-color: red;
+
+}
+
+.main input{
+padding: 10px 101px 8px 14px;
+font-size: 10px;
+color: white;
+font-weight: 900;
+border-radius: 4px;
+background-color: rgba(65, 64, 64, 0.7);
+border: 1px solid rgba(208, 205, 205, 0.7);
+}
+
+.email{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    padding: 10px;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+.pirst{
+    display: flex;
+    flex-direction: column;
+}
+.pirst> :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.pirst> :nth-child(2){
+    font-size: 24px;
+}
+
+.faq{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.faq h2{
+    font-size: 40px;
+}
+
+.faqbox{
+   justify-content: space-between; 
+   display: flex;
+   background-color: rgb(53, 52, 52);
+   max-width: 60vh;
+   cursor: pointer;
+   margin: 34px auto;
+   padding: 24px;
+   font-size: 24px;
+}
+
+.faqbox:hover{
+    color: rgb(252, 251, 251);
+    background-color: rgb(132, 131, 131);
+}
+
+.faqbox svg{
+    filter: invert(1)
+}
+
+footer .questions{
+    margin: 40px;
+    color: aliceblue;
+}
+
+.footer-item a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
